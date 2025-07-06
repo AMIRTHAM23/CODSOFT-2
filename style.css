@@ -298,3 +298,97 @@ footer p:nth-child(2){
   bottom: 35px;
   font-size: 14px;
 }
+
+
+/* ---------------- RESPONSIVE CSS ---------------- */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .btn {
+    margin-top: 15px;
+  }
+
+  .content {
+    top: 40%;
+    left: 5%;
+    width: 90%;
+    transform: translateY(-50%);
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .newsletter form input:first-child {
+    padding: 12px;
+  }
+
+  .newsletter form input:last-child {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .About img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .About-text {
+    width: 100%;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .Title h2 {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  footer {
+    padding: 20px;
+    height: auto;
+  }
+
+  footer p:nth-child(2) {
+    width: 90%;
+  }
+}
+

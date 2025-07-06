@@ -311,11 +311,10 @@ nav {
   position: relative;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .myself {
-    padding-top: 120px; /* Extra space on smaller screens if nav is taller */
+    padding-top: 120px;
   }
-
   nav ul {
     flex-direction: column;
     background: rgba(0, 0, 0, 0.9);
@@ -323,11 +322,24 @@ nav {
     top: 60px;
     left: 0;
     width: 100%;
-    display: none; /* Toggle this with JS if you add a hamburger menu */
+    display: none;
   }
-
   nav ul li {
     display: block;
     padding: 15px;
+  }
+  .About img {
+    width: 100%;
+    height: auto;
+  }
+  .About-text {
+    width: 100%;
+    padding: 20px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .card {
+    margin: 20px 0;
   }
 }

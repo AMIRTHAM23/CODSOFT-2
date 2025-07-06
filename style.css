@@ -4,19 +4,18 @@
   font-family: 'Josefin Sans', sans-serif;
   box-sizing: border-box;
 }
-.myself{
-  height: 100vh;
-  width: 100%;
-  background-image: url(image.jpg);
-  background-size: cover;
-  background-position: center;
-}
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6); /* optional: makes nav semi-transparent */
+  z-index: 1000;
+}
+
+.myself {
+  padding-top: 100px; /* This pushes the content down below navbar */
+  position: relative;
 }
 .Logo{
   color: white;
@@ -298,28 +297,37 @@ footer p:nth-child(2){
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6); /* optional: makes nav semi-transparent */
+  z-index: 1000;
+}
+
+.myself {
+  padding-top: 100px; /* This pushes the content down below navbar */
+  position: relative;
+}
+
+@media(max-width: 768px) {
+  .myself {
+    padding-top: 120px; /* Extra space on smaller screens if nav is taller */
   }
 
   nav ul {
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    margin-top: 10px;
-    padding-left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: none; /* Toggle this with JS if you add a hamburger menu */
   }
 
   nav ul li {
-    width: 100%;
-    text-align: left;
-    padding: 10px 0;
-  }
-
-  .btn {
-    align-self: center;
-    margin-top: 10px;
+    display: block;
+    padding: 15px;
   }
 }
